@@ -14,4 +14,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'guard',  '~> 1.8'
   spec.add_runtime_dependency 'mutant', '~> 0.3.0.beta15'
+  spec.add_runtime_dependency 'inflecto', '~> 0.0.2'
 end

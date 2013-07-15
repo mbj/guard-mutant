@@ -1,0 +1,4 @@
+* Accept cli options in guard config
+* Fix "multiple subjects in same file"
+* Add docs
+* Add mutation coverage

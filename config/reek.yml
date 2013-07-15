@@ -1,0 +1,101 @@
+---
+UnusedParameters:
+  exclude: []
+UncommunicativeParameterName:
+  accept: []
+  exclude: []
+  enabled: true
+  reject:
+  - !ruby/regexp /^.$/
+  - !ruby/regexp /[0-9]$/
+  - !ruby/regexp /[A-Z]/
+TooManyInstanceVariables:
+  exclude: []
+  enabled: true
+  max_instance_variables: 3
+TooManyMethods:
+  exclude:
+  - Unparser::Emitter # TODO: 13 methods, mostly helpers for deduplicate sublcasses
+  enabled: true
+  max_methods: 10
+UncommunicativeMethodName:
+  accept: []
+  exclude: []
+  enabled: true
+  reject:
+  - !ruby/regexp /^[a-z]$/
+  - !ruby/regexp /[0-9]$/
+  - !ruby/regexp /[A-Z]/
+LongParameterList:
+  max_params: 3
+  exclude:
+  - Unparser#self.transquote
+  enabled: true
+  overrides: {}
+FeatureEnvy:
+  exclude: []
+  enabled: true
+ClassVariable:
+  exclude: []
+  enabled: true
+BooleanParameter:
+  exclude: []
+  enabled: true
+IrresponsibleModule:
+  exclude: []
+  enabled: true
+UncommunicativeModuleName:
+  accept: []
+  exclude: []
+  enabled: true
+  reject:
+  - !ruby/regexp /^.$/
+  - !ruby/regexp /[0-9]$/
+NestedIterators:
+  ignore_iterators: []
+  exclude:
+  - Unparser::Emitter#self.children
+  enabled: true
+  max_allowed_nesting: 1
+TooManyStatements:
+  max_statements: 5
+  exclude: []
+  enabled: true
+DuplicateMethodCall:
+  allow_calls: []
+  exclude: []
+  enabled: false
+  max_calls: 1
+UtilityFunction:
+  max_helper_calls: 1
+  exclude: []
+  enabled: true
+Attribute:
+  exclude: []
+  enabled: false
+UncommunicativeVariableName:
+  accept: []
+  exclude: []
+  enabled: true
+  reject:
+  - !ruby/regexp /^.$/
+  - !ruby/regexp /[0-9]$/
+  - !ruby/regexp /[A-Z]/
+RepeatedConditional:
+  exclude: []
+  enabled: true
+  max_ifs: 1
+DataClump:
+  exclude: []
+  enabled: true
+  max_copies: 1
+  min_clump_size: 3
+ControlParameter:
+  exclude: []
+  enabled: true
+NilCheck:
+  enabled: false
+LongYieldList:
+  max_params: 1
+  exclude: []
+  enabled: true

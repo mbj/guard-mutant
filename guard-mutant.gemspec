@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['mbj@schirp-dso.com']
   spec.summary       = 'Guard plugin for Mutant'
   spec.description   = 'Guard::Mutant automatically mutates Ruby when files are modified.'
-  spec.homepage      = 'https://github.com/yujinakayama/guard-rubocop'
+  spec.homepage      = 'https://github.com/mbj/guard-mutant'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/).reject { |f| File.basename(f).start_with?('.') }
